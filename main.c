@@ -22,6 +22,5 @@ int main(void)
 	printf("Error");
 	}
 	waiting = getline(&NOLL, &n, stdin);
-	break;
 	}
 }
