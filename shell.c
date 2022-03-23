@@ -16,14 +16,14 @@ int main(void)
 	i = 0;
 	if (isatty(STDIN_FILENO))
 	bootup = write(STDOUT_FILENO, "$YOU_DA_MAN ", 12); /*shell name*/
-
-	user_input = getline(&line, &n, stdin); /*gets the user input*/
+	signal(SIGINT, sigstop);
+	user_input = getline(&line, &n, stdin); /*gets the user input / line is a stored pointer of the buffer text */
+	/* need to free getline since *line is NULL*/
 	if (user_input == EOF) /*checks EOF*/
 	printf("EOF ERROR");
-	signal(SIGINT, sigstop); /*handles Ctrl + C*/
-	break;
+
+	if 
 	/*delims*/
-	/**/
 	
 }
 }
