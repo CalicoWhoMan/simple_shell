@@ -21,9 +21,7 @@ int main(void)
 	/* need to free getline since *line is NULL*/
 	if (user_input == EOF) /*checks EOF*/
 	printf("EOF ERROR");
-
-	if 
-	/*delims*/
+	if (
 	
 }
 }
