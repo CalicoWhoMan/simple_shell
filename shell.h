@@ -10,13 +10,13 @@
 #include <fcntl.h>
 #include <signal.h>
 
-int _putchar(char c);
-void sigstop(int sig);
-char *_strcpy(char *dest, char *src);
-int _strlen(char *s);
-int _strcmp(char *s1, char *s2);
 int main(__attribute__((unused)) int ac, char *argv[]);
 char **_delim(char *del_st);
+void sigstop(int sig);
 int _strcmp(char *s1, char *s2);
+char *_strcpy(char *dest, char *src);
+int _strlen(char *s);
+int _putchar(char c);
+void _env(void);
 
 #endif /*SHELL_H*/
