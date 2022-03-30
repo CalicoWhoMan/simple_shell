@@ -8,7 +8,7 @@
 
 char **_delim(char *cmd char *del)
 {
-	int cmd = _strlen(cmd);
+	int len_cmd = _strlen(cmd);
 	char **arr = NULL;
 	char *str = NULL;
 	int inc;
