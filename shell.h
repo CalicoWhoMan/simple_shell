@@ -11,7 +11,7 @@
 #include <signal.h>
 
 int main(__attribute__((unused)) int ac, char *argv[]);
-char **_delim(char *del_st);
+char **_delim(char *cmd, char *del);
 void sigstop(int sig);
 int _strcmp(char *s1, char *s2);
 char *_strcpy(char *dest, char *src);

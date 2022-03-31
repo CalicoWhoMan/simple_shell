@@ -4,10 +4,10 @@
 
 void main(void)
 {
-	extern char **environ;
+	char **environ;
 	int inc;
 
-	for(inc = 0; environ[inc] != NULL; inc++)
+	for (inc = 0; environ[inc] != NULL; inc++)
 	{
 	if (strncmp(environ[inc], "PATH", 4) == 0)
 	printf("%s, ", environ[inc]);

@@ -6,12 +6,12 @@
 
 void _env(void)
 {
-	extern char **evo;
+	char **eviron;
 	int inc;
 
-	for (inc = 0; evo[inc] != NULL; inc++) 
+	for (inc = 0; eviron[inc] != NULL; inc++)
 	{
-		write(STDOUT_FILENO, evo[inc], _strlen(evo[inc]));
+		write(STDOUT_FILENO, eviron[inc], _strlen(eviron[inc]));
 		write(STDOUT_FILENO, "/n", 1);
 	}
 }
