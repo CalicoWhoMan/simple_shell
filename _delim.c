@@ -1,29 +1,33 @@
 #include "shell.h"
 /**
- * _delim - function to deliminate and tokenize a string
- * @del: delimiter to take in
- * @cmd: user input
- * Return: pointer to an array array tokenized strings with null byte strings
+ * _delim - func to deliminate input and find path
+ * @argc: argc
+ * @argv: argv
+ * Return: 0 for success -1 for failure
  */
-
-char **_delim(char *cmd, char *del)
+int _delim(int argc, char **argv)
 {
-int len_cmd = _strlen(cmd);
-char **arr = NULL;
-char *str = NULL;
-int inc;
+char *s;
+char *str;
+int inc = 0;
+char **command = argv[];
+char *cmdpath;
+struct stat sb;
+char **environ;
 
-if (cmd[0] == '\0')
-return (NULL);
-str = strtok(cmd, del);
-
-arr = malloc(sizeof(char *) * (inc + 1));
-str = strtok(cmd, del);
-for (inc = 0; str != NULL; inc++)
+for (inc = 0; environ[inc] != NULL; inc++)
 {
-arr[inc] = str;
-str = strtok(NULL, " ");
+if (_strcmp(environ[inc], "PATH", 4) == 0)/*fix to accept 3*/
+s = (environ[inc]);
 }
-arr[inc] = '\0';
-return (arr);
+str = strtok(&s[5], ":");
+while (str != NULL)
+{
+cmdpath = str_concat(str, command);
+/*printf("%s, ",cmdpath);*/
+str = strtok(NULL, ":");
+stat(cmdpath, &sb);
+if (stat(cmdpath, &sb) == 0)
+execve(cmdpath, &argv[1], NULL);
+}
 }
