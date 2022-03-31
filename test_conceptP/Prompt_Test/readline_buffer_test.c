@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+
+int input(char *s,int length);
+
+int main()
+{
+	char buffer[32];
+	char *b = buffer;
+	size_t bufsize = 32;
+	size_t characters;
+
+	printf("$ ");
+	characters = getline(&b,&bufsize,stdin);
+	printf("%zu characters were read.\n",characters);
+	printf("You typed: '%s'\n",buffer);
+
+	return(0);
+}
