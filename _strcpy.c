@@ -5,7 +5,7 @@
  *  to the nuffer pointed to by dest
  *
  * @src: This is the string to be copied
- * @dest: This is the pointer to the destination array where the content is to be copied
+ * @dest: * to the dest arr where the content is to be copied
  * Return: a Pointer to the string destination
  */
 
@@ -18,8 +18,8 @@ char *_strcpy(char *dest, char *src)
 
 	{
 
-			*(dest + len) = *(src + len);
-					len++;
+		*(dest + len) = *(src + len);
+		len++;
 	}
 
 	*(dest + len) = 0;

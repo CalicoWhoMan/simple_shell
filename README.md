@@ -58,7 +58,7 @@
      List of allowed functions and system calls
 
      FUNCTION/SYSTEM CALL	MAN PAGE	More INFO
-     
+
      access	                (man 2 access)	  INFO
      chdir	                (man 2 chdir)	  INFO
      close	                (man 2 close)	  INFO
@@ -81,10 +81,10 @@
      read	                (man 2 read)	  INFO
      readdir	                (man 3 readdir)	  INFO
      signal	                (man 2 signal)	  INFO
-     stat	         (__xstat) (man 2 stat)	  INFO 
+     stat	         (__xstat) (man 2 stat)	  INFO
      lstat	         (__lxstat) (man 2 lstat) INFO
      fstat	         (__fxstat) (man 2 fstat) INFO
-     strtok	                (man 3 strtok)    INFO	
+     strtok	                (man 3 strtok)    INFO
      wait	                (man 2 wait)	  INFO
      waitpid	                (man 2 waitpid)	  INFO
      wait3	                (man 2 wait3)	  INFO
@@ -92,4 +92,4 @@
      write	                (man 2 write)	  INFO
 
 
-     Authors Mikey Shrier, Malik Walker 
+     Authors Mikey Shrier, Malik Walker

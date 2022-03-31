@@ -2,6 +2,7 @@
 /**
  * _delim - function to deliminate and tokenize a string
  * @del: delimiter to take in
+ * @cmd: user input
  * Return: pointer to an array array tokenized strings with null byte strings
  */
 
