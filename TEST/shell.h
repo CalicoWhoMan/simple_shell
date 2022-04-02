@@ -10,7 +10,7 @@
 #include <fcntl.h>
 #include <signal.h>
 
-int main(__attribute__((unused)) int ac, char *argv[]);
+void main(void);
 char **_delim(char *cmd, char *del);
 void sigstop(int sig);
 int _strcmp(char *s1, char *s2);

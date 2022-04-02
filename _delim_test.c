@@ -1,12 +1,16 @@
 #include "shell.h"
-/**
- * _delim - function to deliminate and tokenize a string
- * @del: delimiter to take in
- * @cmd: user input
- * Return: pointer to an array array tokenized strings with null byte strings
- */
 
-char **_delim(char *str, char delim)
+void main(void)
+{
+char *s = "This string needs to be tokenized";
+char delim;
+
+delim = " ";
+DTA = _delim(s, delim);
+printf("DTA is: %s", DTA);
+}
+
+char **_delim(char *cmd, char delim)
 {
 int len_cmd = _strlen(cmd);
 char **arr = NULL;

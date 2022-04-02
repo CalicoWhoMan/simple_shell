@@ -19,7 +19,7 @@ if (s2 == NULL)
 {
 s2 = "";
 }
-n = malloc(strlen(s1) + strlen(s2) + 1);
+n = malloc(_strlen(s1) + _strlen(s2) + 1);
 if
 (n == 0)
 {

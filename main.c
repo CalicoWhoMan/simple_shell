@@ -26,8 +26,9 @@ if (waiting4u == EOF)
 {
 break; /*getline error*/
 }
-buffer[waiting4u - 1] = '\0'; /*check if first char is null byte*/
-DTA = _delim(buffer, " "); /*DTA is argv*/
+buffer[waiting4u - 1] = '\0'; /*setting first char null byte*/
+
+DTA = _delim(buffer, _findpath); /*THIS line needs to use the PATH and buffer input*/
 if (DTA == NULL)
 continue;
 }
